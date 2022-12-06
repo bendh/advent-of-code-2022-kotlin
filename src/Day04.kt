@@ -39,10 +39,10 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-     val testInput = readInput("Day04_test")
+     val testInput = readLines("Day04_test")
      check(part2(testInput) == 4)
 //
-    val input = readInput("Day04")
+    val input = readLines("Day04")
     println(part1(input))
     println(part2(input))
 }
