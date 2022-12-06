@@ -3,8 +3,7 @@ import kotlin.streams.toList
 fun main() {
 
     fun getUniqueBlockIndexEndOf(input: String, window: Int) =
-        (input.chars().toList()
-            .windowed(window)
+        (input.windowed(window)
             .indexOfFirst {
                 it.toSet().size == window
             }) + window
